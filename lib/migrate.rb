@@ -1,6 +1,6 @@
-require 'sequel'
+require "sequel"
 
-ENV["RACK ENV"] ||= "development"
+ENV["RACK_ENV"] ||= "development"
 
 DB = Sequel.connect "sqlite://db/#{ENV["RACK_ENV"]}.sqlite3"
 
@@ -10,3 +10,4 @@ DB.create_table :images do
   String :file
 end
 
+# DB.drop_table?(:images)
