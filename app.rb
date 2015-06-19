@@ -1,5 +1,5 @@
 class App < Sinatra::Base
   get '/' do
-    "Hello Image gallery!"
+    haml :index
   end
 end
