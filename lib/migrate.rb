@@ -9,3 +9,4 @@ DB.create_table :images do
   String :title
   String :file
 end
+
